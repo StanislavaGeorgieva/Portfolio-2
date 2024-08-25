@@ -1,61 +1,46 @@
-Project Overview
-The portfolio website is a single-page application (SPA) with a clean, modern design. It includes sections for home, about me, skills, projects, and contact information. The site is fully responsive and works well on both desktop and mobile devices.
+# Stanislava's Portfolio
 
-Features
-Home Section: Introduction and brief overview of Stanislava's profile.
-About Me Section: Detailed information about Stanislava's background, skills, and interests.
-Skills Section: Visual representation of Stanislava's proficiency in various technologies.
-Projects Section: Gallery of projects with links to GitHub repositories.
-Contact Me Section: Contact information and a form to send messages directly.
-Technologies Used
-HTML5: For structuring the content of the website.
-CSS3: For styling and layout, including responsive design.
-JavaScript: For interactivity and navigation.
-Swiper.js: For creating the slider effect between different sections.
-Font Awesome: For using icons in the navigation and other parts of the site.
-Google Fonts: For custom fonts.
-Git: For version control.
-Firebase: (Optional) For real-time data storage and authentication if needed in future updates.
-Setup and Installation
+Welcome to Stanislava's personal portfolio website. This project showcases her skills, experience, and projects as a Junior Front-End Developer. The website is built using HTML, CSS, and JavaScript with various libraries and frameworks to enhance its functionality and design.
+
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contact](#contact)
+
+## Demo
+
+You can view the live version of the portfolio [here](https://my-portfolio-stanislava-georgieva.vercel.app/).
+
+## Features
+
+- **Responsive Design**: Optimized for different screen sizes, providing a seamless experience across devices.
+- **Swiper Integration**: Smooth transitions between different sections using Swiper.js.
+- **Interactive Navigation**: Sidebar menu with smooth scrolling and section highlighting.
+- **Downloadable CV**: Users can download Stanislava's CV directly from the website.
+- **Embedded PDF Viewer**: Certificates and other documents are embedded within the site for easy viewing.
+- **Project Gallery**: Showcases various projects with links to their GitHub repositories.
+- **Contact Form**: Allows users to send messages directly through the website.
+
+## Technologies Used
+
+- **HTML5**: For structuring the content.
+- **CSS3**: For styling, including the use of external fonts and responsive design.
+- **JavaScript**: For adding interactivity and handling navigation.
+- **Swiper.js**: For creating a smooth slider effect across different sections.
+- **Font Awesome**: For using icons throughout the site.
+- **Google Fonts**: For custom typography.
+- **GitHub Pages**: For hosting the portfolio.
+
+## Installation
+
 To run this project locally, follow these steps:
 
-Clone the repository:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/StanislavaGeorgieva/My-portfolio.git
 
-bash
-Copy code
-git clone https://github.com/StanislavaGeorgieva/My-portfolio.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd My-portfolio
-Open index.html in your browser to view the website:
-
-bash
-Copy code
-open index.html
-Usage
-Navigation: The website uses a navigation sidebar. Click on the icons to navigate between sections.
-Interactivity: The page uses Swiper.js to slide between sections. Use the sidebar or the buttons provided within sections to navigate.
-Contact: Use the contact form to send a message directly to Stanislava.
-Project Structure
-bash
-Copy code
-My-portfolio/
-│
-├── images/             # Image assets for the website
-├── style.css           # CSS styling for the website
-├── main.js             # JavaScript for interactivity
-├── index.html          # Main HTML file
-└── README.md           # Project documentation (this file)
-Contributing
-If you would like to contribute to this project, please fork the repository and create a pull request with your changes. Contributions are welcome!
-
-License
-This project is licensed under the MIT License. You are free to use, modify, and distribute this project, provided that proper credit is given.
-
-Acknowledgements
-The layout inspiration was taken from various online portfolios.
-Special thanks to Muzammal Ahmed for the Swiper.js integration inspiration.
-Icons by Font Awesome.
-Fonts by Google Fonts.
