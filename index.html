@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Skills</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Projects</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Hi! I'm <span class="stylized-name">Stanislava</span>,</h1>
+                        <h2>A <span class="proffesions">Junior Front End Developer</span></h2>
+                        <p class="heroline">I have a strong passion for creating intuitive and engaging user
+                            experiences.</p>
+                        <div class="buttonGroup">
+                            <a href="/images/Stanislava_CV.pdf" download="Stanislava_CV.pdf">
+                                <button>Download CV</button>
+                            </a>
+                            <button onclick="Navigate(4)">Contact me</button>
+                        </div>
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="/images/image.png" alt="Stanislava's picture">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h1 class="heading">About Me</h1>
+                        <h3 class="sub-heading">Hello! I'm Stanislava, <span class="proffesions">A Juninor Front End
+                                Developer</span></h3>
+                        <p class="aboutme-deatils">
+                        <p> I'm a passionate junior front-end developer with a love for creating
+                            intuitive and engaging user experiences. I have a background in web development and have
+                            worked on various projects, honing my skills in JavaScript , React , HTML and CSS. I am constantly
+                            learning and exploring new technologies to improve my craft and stay up-to-date with the latest trends in web development.  
+                        In my free time, I enjoy reading tech blogs, participating in coding challenges, and
+                            contributing to open-source projects. I believe in the power of collaboration and am always
+                            excited to work with like-minded individuals on exciting projects.I am fast learner and team player with excellent communication skills. I am looking for a challenging role in a reputable organization where I can grow and contribute to the success of the company.
+                        Thank you for visiting my portfolio. Feel free to explore my work and reach out if you'd like
+                            to connect!</p>
+                        </p>
+                        <div class="about-me-divison">
+                            <div class="about-me-table">
+                                <embed src="/images/Certificate.pdf" type="application/pdf" width="100%" height="300px" />
+                            </div>
+
+                            <div class="skill-bar">
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:95%"></div>
+                                    </div>
+                                </li>
+                                                               
+                                <li>
+                                    <p>React</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:70%"></div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:80%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:80%"></div>
+                                    </div>
+                                </li>
+ 
+                                <li>
+                                    <p>Git</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:60%"></div>
+                                    </div>
+                                </li>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services">
+
+                    <h1 class="heading">Skills</h1>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-brands fa-js"></i></div>
+                        <h2>JavaScript</h2>
+                        <p>Experienced in writing clean and efficient JavaScript code for dynamic web applications</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-brands fa-react"></i></div>
+                        <h2>React</h2>
+                        <p>Familiar with building component-based user interfaces using React.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-brands fa-html5"></i></div>
+                        <h2>HTML</h2>
+                        <p>Expert in crafting semantic and accessible HTML structures</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-css3"></i></div>
+                        <h2>CSS</h2>
+                        <p>Proficient in creating responsive and visually appealing designs using CSS and frameworks like Taiwind , Chakra and Bootstrap.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-brands fa-git"></i></div>
+                        <h2>Git</h2>
+                        <p>Comfortable with version control using Git and collaborating on projects via GitHub.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-brands fa-google"></i></div>
+                        <h2>Firebase</h2>
+                        <p>Knowledgeable in using Firebase for real-time data storage and authentication.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide gallery">
+                    <h1 class="heading">Projects</h1>
+    <div class="project">
+        <a href="https://github.com/Event-calendar-Final-Project/Event-Calendar-Final-Project-A58" target="_blank" aria-label="GitHub Project 3">
+            <img src="images/EventCalendar.png" alt="Project 3">
+        </a>
+    </div>
+    <div class="project">
+        <a href="https://github.com/Forum-Project-Team-8/Forum" target="_blank" aria-label="GitHub Project 2">
+            <img src="images/TravelForum.png" alt="Project 2">
+        </a>
+    </div>
+    <div class="project">
+
+        <a href="https://github.com/Web-project-A58/Web-project-A58" target="_blank" aria-label="GitHub Project 1">
+            <img src="images/Giphy.png" alt="Project 1">
+        </a>
+    </div>
+    <div class="project">
+
+        <a href="https://github.com/StanislavaGeorgieva/My-portfolio" target="_blank" aria-label="GitHub Project 5">
+            <img src="images/portfolio1.png" alt="Project 5">
+        </a>
+    </div>
+    <div class="project">
+        <a href="https://github.com/StanislavaGeorgieva/Mauritius/tree/main" target="_blank" aria-label="GitHub Project 4">
+            <img src="images/Mauritius.png" alt="Project 4">
+        </a>
+    </div>
+    <div class="project">
+        <a href="https://github.com/yourusername/Project6" target="_blank" aria-label="GitHub Project 6">
+            <img src="images/portfolio2.png" alt="Project 6">
+        </a>
+    </div>
+
+                </div>
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                        <h3>Mobile No</h3>
+                        <p>+359878779859</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Burgas , Bulgaria</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>miss_stanislava@yahoo.com</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-solid fa-globe"></i>
+                        <h3>Website</h3>
+                        <p>https://my-portfolio-stanislava-georgieva.vercel.app/</p>
+                    </div>
+                    <form>
+                        <h2>Send Me A Message <div class="SocialLinks">
+                            <a href="mailto:miss_stanislava@yahoo.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/StanislavaGeorgieva" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-git"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/stanislava-georgieva-71686128a/" target="_blank" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        </h2>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="email">
+                        <textarea rows="10" placeholder="Type your Message Here..."></textarea>
+                        <button class="primary">Send</button>
+
+                    </form>
+                    <footer>
+                        <li>Copyright © 2024 Stanislava </li>
+                    </footer>
+                </div>
+            </div>
+    </main>
+
+</body>
+
+</html>
