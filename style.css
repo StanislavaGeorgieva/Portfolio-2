@@ -629,3 +629,110 @@ form h2 .SocialLinks a:hover i {
         font-size: 0.7rem;
     }
 }
+
+@media (max-width: 768px) {
+    aside {
+        width: 200px;
+    }
+
+    .HomeContent {
+        padding: 20px;
+    }
+
+    .SideImg {
+        display: none; /* Hide side image on smaller screens */
+    }
+
+    .HomeContent h1 {
+        font-size: 2.5em;
+    }
+
+    .HomeContent h2 {
+        font-size: 2em;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .services .service i {
+        font-size: 2.5rem;
+    }
+
+    .services .service .service-icon {
+        padding: 0px 25px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .contactMe {
+        padding: 20px;
+    }
+
+    .contactMe form {
+        grid-template-columns: 1fr;
+    }
+
+    .contactMe form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contactMe form input,
+    .contactMe form textarea {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    aside {
+        width: 150px;
+    }
+
+    .HomeContent {
+        padding: 10px;
+    }
+
+    .HomeContent h1 {
+        font-size: 2em;
+    }
+
+    .HomeContent h2 {
+        font-size: 1.8em;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .services .service i {
+        font-size: 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .contactMe {
+        padding: 10px;
+    }
+
+    .contactMe form h2 {
+        font-size: 1.2rem;
+    }
+
+    .contactMe form input,
+    .contactMe form textarea {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
