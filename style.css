@@ -521,6 +521,9 @@ form h2 .SocialLinks a:hover i {
 }
 
 /* General Styles for Mobile Devices */
+/* General Styles for Mobile Devices */
+/* General Styles for Mobile Devices */
+/* General Styles for Mobile Devices */
 @media only screen and (max-width: 768px) {
 
     /* Enable scrolling on mobile devices */
@@ -577,10 +580,12 @@ form h2 .SocialLinks a:hover i {
 
     .home-slide {
         flex-direction: column;
+        overflow-y: auto; /* Allow scrolling if content overflows */
     }
 
     .HomeContent {
         padding: 20px;
+        overflow-y: auto; /* Allow scrolling if content overflows */
     }
 
     .SideImg {
@@ -595,6 +600,7 @@ form h2 .SocialLinks a:hover i {
 
     /* About Me Section Adjustments */
     .about-us {
+        overflow-y: auto;
         padding: 20px;
     }
 
@@ -611,6 +617,7 @@ form h2 .SocialLinks a:hover i {
     .services {
         grid-template-columns: 100%;
         padding: 20px;
+        overflow-y: auto; /* Enable scrolling if content overflows */
     }
 
     .service {
@@ -621,6 +628,7 @@ form h2 .SocialLinks a:hover i {
     .gallery {
         grid-template-columns: 100%;
         padding: 20px;
+        overflow-y: auto; /* Enable scrolling if content overflows */
     }
 
     .project {
@@ -720,36 +728,6 @@ footer {
     }
 }
 
-
-/* Mobile Specific Styles */
-@media only screen and (max-width: 768px) {
-
-    /* Ensure footer is at the bottom */
-    footer {
-        position: relative;
-        bottom: 0;
-    }
-}
-
-/* Styles for Very Small Devices (like older iPhones) */
-@media only screen and (max-width: 480px) {
-
-    /* Adjust footer padding and text size */
-    footer {
-        padding: 15px 0;
-        font-size: 14px;
-    }
-}
-
-
-
-html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto;   /* Enable vertical scrolling */
-    height: 100%;
-    width: 100%;
-}
-
 /* Ensure scrolling is enabled for overflowing content */
 aside, main {
     overflow-y: auto; /* Allow vertical scrolling within these elements if content exceeds their height */
@@ -762,6 +740,63 @@ aside, main {
 }
 
 /* Adjust for overflowing content in specific sections */
-.about-me-divison, .contactMe {
+.about-me-divison {
     overflow-y: auto;
+}
+.contactMe {
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-slide, .about-us, .services, .gallery {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+    .HomeContent {
+        padding: 20px;
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+    .about-us {
+        padding: 20px;
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+    
+    .about-me-divison {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+    
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .home-slide, .about-us, .services, .gallery {
+        overflow-y: auto; /* Enable vertical scrolling on mobile */
+    }
+
+    .home-slide {
+        flex-direction: column;
+    }
+
+    .services, .gallery {
+        grid-template-columns: 100%;
+        padding: 20px;
+    }
 }

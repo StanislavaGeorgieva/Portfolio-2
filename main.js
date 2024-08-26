@@ -1,4 +1,4 @@
-/* const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
     effect: "cube",
     allowTouchMove: false,
     grabCursor: false,
@@ -20,8 +20,29 @@ function Navigate(indx) {
     }
     Array.from(document.querySelectorAll(".Links li"))[indx].classList.add("activeLink");
     swiper.slideTo(indx, 1500, true);
-} */
-    const swiper = new Swiper(".swiper", {
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('main > section'); // Adjust the selector based on your HTML structure
+
+    sections.forEach(section => {
+        let startY;
+        let endY;
+
+        section.addEventListener('touchstart', (e) => {
+            startY = e.touches[0].clientY;
+        });
+
+        section.addEventListener('touchmove', (e) => {
+            endY = e.touches[0].clientY;
+            const deltaY = startY - endY;
+
+            section.scrollBy(0, deltaY);
+            startY = endY; // Update startY for continuous scrolling
+        });
+    });
+});
+/*     const swiper = new Swiper(".swiper", {
         effect: "cube",
         allowTouchMove: false,
         grabCursor: false,
@@ -55,7 +76,7 @@ function Navigate(indx) {
     links.forEach(link => link.classList.remove("activeLink"));
     links[indx].classList.add("activeLink");
     swiper.slideTo(indx, 1500, true);
-}
+} */
 
         
     
