@@ -20,10 +20,10 @@ function Navigate(indx) {
     }
     Array.from(document.querySelectorAll(".Links li"))[indx].classList.add("activeLink");
     swiper.slideTo(indx, 1500, true);
-};
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('main > section'); // Adjust the selector based on your HTML structure
+    const sections = document.querySelectorAll('.swiper-slide'); // Adjust the selector based on your HTML structure
 
     sections.forEach(section => {
         let startY;
@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             section.scrollBy(0, deltaY);
             startY = endY; // Update startY for continuous scrolling
+        });
+
+        // Enable mouse wheel scrolling
+        section.addEventListener('wheel', (e) => {
+            section.scrollBy(0, e.deltaY);
         });
     });
 });
