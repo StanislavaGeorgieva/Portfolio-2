@@ -671,6 +671,22 @@ form h2 .SocialLinks a:hover i {
 }
 
 /* General Styles for Footer */
+/* Ensure the body can scroll */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* The main content area takes up available space */
+main {
+    flex: 1;
+    overflow-y: auto; /* Enable scrolling within the main content */
+}
+
+/* General Styles for Footer */
 footer {
     width: 100%;
     background-color: #333; /* Example background color */
@@ -679,17 +695,31 @@ footer {
     padding: 10px 0;
 }
 
-/* Sticky Footer */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+/* Mobile Specific Styles */
+@media only screen and (max-width: 768px) {
+
+    /* Ensure footer is at the bottom */
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+    /* Make sure aside is scrollable if it overflows */
+    aside {
+        overflow-x: auto;
+    }
 }
 
-main {
-    flex: 1; /* This will make the main content area grow to fill available space */
+/* Styles for Very Small Devices (like older iPhones) */
+@media only screen and (max-width: 480px) {
+
+    /* Adjust footer padding and text size */
+    footer {
+        padding: 15px 0;
+        font-size: 14px;
+    }
 }
+
 
 /* Mobile Specific Styles */
 @media only screen and (max-width: 768px) {
