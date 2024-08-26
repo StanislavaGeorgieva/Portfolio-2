@@ -520,135 +520,140 @@ form h2 .SocialLinks a:hover i {
     color: #ffffff;
 }
 
+/* General Styles for Mobile Devices */
+@media only screen and (max-width: 768px) {
 
-
-@media (max-width: 768px) {
+    /* Main Layout Adjustments */
     main {
         flex-direction: column;
-        text-align: center;
     }
 
+    /* Sidebar Adjustments */
     aside {
-        width: 200px;
-        margin: 0 auto;
-    }
-
-    .HomeContent {
-        padding: 20px;
-    }
-
-    .SideImg {
-        display: block; /* Ensure side image is visible on smaller screens */
         width: 100%;
-        margin: 10px 0;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
     }
 
-    .HomeContent h1 {
-        font-size: 2.5em;
+    .Links {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
     }
 
-    .HomeContent h2 {
-        font-size: 2em;
-    }
-
-    .services {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .services .service {
-        width: 80%;
-        margin: 10px auto;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    .contactMe {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .contactMe form {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-    .contactMe form h2 {
-        font-size: 1.5rem;
-    }
-
-    .contactMe form input,
-    .contactMe form textarea {
-        margin: 10px 0;
-        width: calc(100% - 40px);
-    }
-
-    footer {
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 480px) {
-    aside {
-        width: 150px;
-    }
-
-    .HomeContent {
+    aside li {
         padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
     }
 
-    .HomeContent h1 {
-        font-size: 2em;
-    }
-
-    .HomeContent h2 {
-        font-size: 1.8em;
-    }
-
-    .SideImg {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .services {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .services .service {
-        width: 80%;
-        margin: 10px auto;
-    }
-
-    .services .service i {
-        font-size: 2rem;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .contactMe {
-        padding: 10px;
-    }
-
-    .contactMe form h2 {
+    aside li i {
         font-size: 1.2rem;
     }
 
-    .contactMe form input,
-    .contactMe form textarea {
-        font-size: 1rem;
-        padding: 10px;
+    /* Swiper and Slides Adjustments */
+    .mySwiper {
+        width: 100vw;
+        height: auto;
     }
 
-    footer {
-        font-size: 0.7rem;
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .home-slide {
+        flex-direction: column;
+    }
+
+    .HomeContent {
+        padding: 20px;
+    }
+
+    .SideImg {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .SideImg img {
+        margin: auto;
+        width: 80%;
+    }
+
+    /* About Me Section Adjustments */
+    .about-us {
+        padding: 20px;
+    }
+
+    .about-me-divison {
+        flex-direction: column;
+    }
+
+    .about-me-table, .skill-bar {
+        width: 100%;
+    }
+
+    /* Skills Section Adjustments */
+    .services {
+        grid-template-columns: 100%;
+        padding: 20px;
+    }
+
+    .service {
+        margin: 10px 0;
+    }
+
+    /* Gallery Section Adjustments */
+    .gallery {
+        grid-template-columns: 100%;
+        padding: 20px;
+    }
+
+    .project {
+        margin: 15px 0;
+    }
+
+    /* Contact Me Section Adjustments */
+    .contactMe {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        padding: 20px;
+    }
+
+    .contactMe form {
+        grid-template-columns: 100%;
+    }
+
+    .contactMe form input, .contactMe form textarea {
+        width: calc(100% - 40px);
+        margin: 10px 0;
     }
 }
 
+/* Styles for Very Small Devices (like older iPhones) */
+@media only screen and (max-width: 480px) {
+
+    /* General Font Size Adjustment */
+    body {
+        font-size: 14px;
+    }
+
+    .HomeContent h1 {
+        font-size: 2em;
+    }
+
+    .HomeContent h2 {
+        font-size: 1.5em;
+    }
+
+    .HomeContent .heroline {
+        font-size: 1rem;
+    }
+
+    .buttonGroup button, .primary {
+        font-size: 1rem;
+    }
+}
