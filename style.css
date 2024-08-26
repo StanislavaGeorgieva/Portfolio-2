@@ -523,9 +523,18 @@ form h2 .SocialLinks a:hover i {
 /* General Styles for Mobile Devices */
 @media only screen and (max-width: 768px) {
 
+    /* Enable scrolling on mobile devices */
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-y: auto;   /* Enable vertical scrolling */
+        height: 100%;
+        width: 100%;
+    }
+
     /* Main Layout Adjustments */
     main {
         flex-direction: column;
+        overflow-y: auto; /* Enable scrolling within main */
     }
 
     /* Sidebar Adjustments */
@@ -533,7 +542,7 @@ form h2 .SocialLinks a:hover i {
         width: 100%;
         height: auto;
         flex-direction: row;
-        overflow-x: auto;
+        overflow-x: auto; /* Enable horizontal scrolling if necessary */
     }
 
     .Links {
@@ -563,6 +572,7 @@ form h2 .SocialLinks a:hover i {
         display: flex;
         flex-direction: column;
         padding: 20px;
+        overflow-y: auto; /* Allow scrolling if slide content overflows */
     }
 
     .home-slide {
@@ -590,6 +600,7 @@ form h2 .SocialLinks a:hover i {
 
     .about-me-divison {
         flex-direction: column;
+        overflow-y: auto; /* Enable scrolling if content overflows */
     }
 
     .about-me-table, .skill-bar {
@@ -621,6 +632,7 @@ form h2 .SocialLinks a:hover i {
         grid-template-columns: 100%;
         grid-template-rows: auto;
         padding: 20px;
+        overflow-y: auto; /* Enable scrolling if content overflows */
     }
 
     .contactMe form {
@@ -656,4 +668,70 @@ form h2 .SocialLinks a:hover i {
     .buttonGroup button, .primary {
         font-size: 1rem;
     }
+}
+
+/* General Styles for Footer */
+footer {
+    width: 100%;
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Sticky Footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1; /* This will make the main content area grow to fill available space */
+}
+
+/* Mobile Specific Styles */
+@media only screen and (max-width: 768px) {
+
+    /* Ensure footer is at the bottom */
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+/* Styles for Very Small Devices (like older iPhones) */
+@media only screen and (max-width: 480px) {
+
+    /* Adjust footer padding and text size */
+    footer {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+}
+
+
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto;   /* Enable vertical scrolling */
+    height: 100%;
+    width: 100%;
+}
+
+/* Ensure scrolling is enabled for overflowing content */
+aside, main {
+    overflow-y: auto; /* Allow vertical scrolling within these elements if content exceeds their height */
+    max-height: 100vh; /* Prevent elements from exceeding the viewport height */
+}
+
+/* Ensure Swiper slides can scroll if content overflows */
+.swiper-slide {
+    overflow-y: auto;
+}
+
+/* Adjust for overflowing content in specific sections */
+.about-me-divison, .contactMe {
+    overflow-y: auto;
 }
