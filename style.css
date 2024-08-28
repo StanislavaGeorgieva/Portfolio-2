@@ -957,3 +957,71 @@ aside, main {
         height: 400px; /* Adjust height for better visibility on mobile */
     }
 }
+
+@media only screen and (max-width: 768px) {
+    form {
+        padding: 10px;
+    }
+
+    .SocialLinks {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .SocialLinks a {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .SocialLinks a:hover, .SocialLinks a:active, .SocialLinks a:focus {
+        color: #0073b1;
+        text-decoration: none;
+    }
+    
+    .contactMe {
+        padding: 20px;
+    }
+
+    /* Ensures touch targets are appropriately spaced */
+    aside li {
+        padding: 20px 15px;  /* Larger padding for touch */
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;  /* Slightly larger font for readability */
+        border-bottom: 1px solid #ccc;
+    }
+
+    aside li i {
+        font-size: 1.5rem;
+    }
+
+    /* Ensure links are easily tappable */
+    .Links a {
+        display: block;
+        padding: 10px 0;
+        color: inherit;
+        text-decoration: none;
+        touch-action: manipulation;  /* Improves tap responsiveness */
+    }
+
+    /* Scrollable aside on mobile */
+    aside {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;  /* Prevents links from wrapping */
+    }
+
+    .Links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Links a {
+        padding: 10px;
+    }
+}
