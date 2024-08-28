@@ -496,7 +496,7 @@ footer li {
     padding: 10px;
 }
 
-form h2 .SocialLinks {
+form .SocialLinks {
     padding: 5px;
     width: fit-content;
     margin-left: auto;
@@ -507,13 +507,13 @@ form h2 .SocialLinks {
     gap: 10px;
 }
 
-form h2 .SocialLinks a {
+form .SocialLinks a {
     color: #80ed99;
     text-decoration: none;
     display: flex;
 }
 
-form h2 .SocialLinks i {
+form .SocialLinks i {
     padding: 10px;
     border-radius: 50%;
     transition-duration: 0.25s;
@@ -522,7 +522,7 @@ form h2 .SocialLinks i {
 }
 
 
-form h2 .SocialLinks a:hover i {
+form .SocialLinks a:hover i {
     background-color: #176d2d;
     color: #ffffff;
 }
@@ -532,17 +532,26 @@ form h2 .SocialLinks a:hover i {
         padding: 10px;
     }
 
+    .SocialLinks {
+        text-align: center; /* Подравняване на иконите в центъра */
+        margin-top: 20px;
+    }
+    
     .SocialLinks a {
         display: inline-block;
         margin: 0 10px;
-        font-size: 24px; /* Adjust icon size */
+        font-size: 24px; /* Размер на иконите */
         cursor: pointer;
-        z-index: 1000; /* Make sure it’s on top of other elements */
+        z-index: 10; /* Уверете се, че са над други елементи */
     }
     
     .SocialLinks a:hover, .SocialLinks a:active, .SocialLinks a:focus {
-        color: #0073b1; /* Or any color to indicate interaction */
+        color: #0073b1; /* Промяна на цвета при интеракция */
         text-decoration: none;
+    }
+    
+    .contactMe {
+        padding: 20px; /* Увеличете подложката, за да избегнете проблеми при тъч */
     }
 }
 /* General Styles for Mobile Devices */
