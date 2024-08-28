@@ -526,57 +526,23 @@ form .SocialLinks a:hover i {
     background-color: #176d2d;
     color: #ffffff;
 }
-
 @media only screen and (max-width: 768px) {
-    form {
-        padding: 10px;
-    }
-
-    .SocialLinks {
-        text-align: center; /* Подравняване на иконите в центъра */
-        margin-top: 20px;
-    }
-    
-    .SocialLinks a {
-        display: inline-block;
-        margin: 0 10px;
-        font-size: 24px; /* Размер на иконите */
-        cursor: pointer;
-        z-index: 10; /* Уверете се, че са над други елементи */
-    }
-    
-    .SocialLinks a:hover, .SocialLinks a:active, .SocialLinks a:focus {
-        color: #0073b1; /* Промяна на цвета при интеракция */
-        text-decoration: none;
-    }
-    
-    .contactMe {
-        padding: 20px; /* Увеличете подложката, за да избегнете проблеми при тъч */
-    }
-}
-/* General Styles for Mobile Devices */
-@media only screen and (max-width: 768px) {
-
-    /* Enable scrolling on mobile devices */
     html, body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        overflow-y: auto;   /* Enable vertical scrolling */
+        overflow-x: hidden; 
         height: 100%;
         width: 100%;
     }
 
-    /* Main Layout Adjustments */
     main {
         flex-direction: column;
-        overflow-y: auto; /* Enable scrolling within main */
+        overflow-y: auto;
     }
 
-    /* Sidebar Adjustments */
     aside {
         width: 100%;
         height: auto;
         flex-direction: row;
-        overflow-x: auto; /* Enable horizontal scrolling if necessary */
+        overflow-x: auto;
     }
 
     .Links {
@@ -592,86 +558,60 @@ form .SocialLinks a:hover i {
         font-size: 0.9rem;
     }
 
-    aside li i {
-        font-size: 1.2rem;
-    }
-
-    /* Swiper and Slides Adjustments */
-    .mySwiper {
-        width: 100vw;
-        height: auto;
-    }
-
     .swiper-slide {
         display: flex;
         flex-direction: column;
-        padding: 20px;
-        overflow-y: auto; /* Allow scrolling if slide content overflows */
+        overflow-y: auto;
     }
 
     .home-slide {
         flex-direction: column;
-        overflow-y: auto; /* Allow scrolling if content overflows */
+        height: 100vh;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
 
     .HomeContent {
         padding: 20px;
-        overflow-y: auto; /* Allow scrolling if content overflows */
+        text-align: center;
+        flex: 1;
+        overflow: hidden;
     }
 
     .SideImg {
         width: 100%;
-        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .SideImg img {
-        margin: auto;
         width: 80%;
+        max-width: 300px;
+        height: auto;
     }
 
-    /* About Me Section Adjustments */
-    .about-us {
-        overflow-y: auto;
+    .about-us, .services, .gallery {
         padding: 20px;
+        overflow-y: auto;
     }
 
     .about-me-divison {
         flex-direction: column;
-        overflow-y: auto; /* Enable scrolling if content overflows */
+        overflow-y: auto;
     }
 
-    .about-me-table, .skill-bar {
-        width: 100%;
-    }
-
-    /* Skills Section Adjustments */
-    .services {
-        grid-template-columns: 100%;
-        padding: 20px;
-        overflow-y: auto; /* Enable scrolling if content overflows */
-    }
-
-    .service {
+    .service, .project {
         margin: 10px 0;
     }
 
-    /* Gallery Section Adjustments */
-    .gallery {
-        grid-template-columns: 100%;
-        padding: 20px;
-        overflow-y: auto; /* Enable scrolling if content overflows */
-    }
-
-    .project {
-        margin: 15px 0;
-    }
-
-    /* Contact Me Section Adjustments */
     .contactMe {
         grid-template-columns: 100%;
         grid-template-rows: auto;
         padding: 20px;
-        overflow-y: auto; /* Enable scrolling if content overflows */
+        overflow-y: auto;
     }
 
     .contactMe form {
@@ -682,12 +622,13 @@ form .SocialLinks a:hover i {
         width: calc(100% - 40px);
         margin: 10px 0;
     }
+
+    .about-content {
+        margin-bottom: 15px;
+    }
 }
 
-/* Styles for Very Small Devices (like older iPhones) */
 @media only screen and (max-width: 480px) {
-
-    /* General Font Size Adjustment */
     body {
         font-size: 14px;
     }
@@ -708,253 +649,3 @@ form .SocialLinks a:hover i {
         font-size: 1rem;
     }
 }
-
-/* General Styles for Footer */
-/* Ensure the body can scroll */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    overflow-y: auto; /* Enable vertical scrolling */
-}
-
-/* The main content area takes up available space */
-main {
-    flex: 1;
-    overflow-y: auto; /* Enable scrolling within the main content */
-}
-
-/* General Styles for Footer */
-footer {
-    width: 100%;
-    background-color: #333; /* Example background color */
-    color: #fff; /* Example text color */
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Mobile Specific Styles */
-@media only screen and (max-width: 768px) {
-
-    /* Ensure footer is at the bottom */
-    footer {
-        position: relative;
-        bottom: 0;
-    }
-
-    /* Make sure aside is scrollable if it overflows */
-    aside {
-        overflow-x: auto;
-    }
-}
-
-/* Styles for Very Small Devices (like older iPhones) */
-@media only screen and (max-width: 480px) {
-
-    /* Adjust footer padding and text size */
-    footer {
-        padding: 15px 0;
-        font-size: 14px;
-    }
-}
-
-/* Ensure scrolling is enabled for overflowing content */
-aside, main {
-    overflow-y: auto; /* Allow vertical scrolling within these elements if content exceeds their height */
-    max-height: 100vh; /* Prevent elements from exceeding the viewport height */
-}
-
-/* Ensure Swiper slides can scroll if content overflows */
-.swiper-slide {
-    overflow-y: auto;
-}
-
-/* Adjust for overflowing content in specific sections */
-.about-me-divison {
-    overflow-y: auto;
-}
-.contactMe {
-    overflow-y: auto;
-}
-
-@media only screen and (max-width: 768px) {
-    .home-slide, .about-us, .services, .gallery {
-        display: flex;
-        flex-direction: column;
-        overflow-y: auto; /* Allow vertical scrolling */
-    }
-    .HomeContent {
-        padding: 20px;
-        overflow-y: auto; /* Allow vertical scrolling */
-    }
-    .about-us {
-        display: flex;
-        padding: 100px;
-        color: white;
-        overflow-y: auto; /* Enable vertical scrolling */
-        box-sizing: border-box;/*Allow vertical scrolling */
-    }
-    
-    .about-me-divison {
-        display: flex;
-        flex-direction: column;
-        overflow-y: auto; /* Allow vertical scrolling */
-    }
-    
-    .services {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        padding: 20px;
-        box-sizing: border-box;
-        overflow-y: auto; /* Allow vertical scrolling */
-    }
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 20px;
-        box-sizing: border-box;
-        overflow-y: auto; /* Allow vertical scrolling */
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    .home-slide, .about-us, .services, .gallery {
-        overflow-y: auto;
-    }
-
-    .home-slide {
-        flex-direction: column;
-    }
-
-    .services, .gallery {
-        grid-template-columns: 100%;
-        padding: 20px;
-    }
-}
-
-/* General Styles for Mobile Devices */
-@media only screen and (max-width: 768px) {
-    html, body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        height: 100%;
-        width: 100%;
-    }
-
-    main {
-        flex-direction: column;
-        overflow-y: auto; /* Enable scrolling within main */
-    }
-
-    .swiper-slide {
-        display: flex;
-        flex-direction: column;
-        overflow-y: auto; /* Allow scrolling if slide content overflows */
-    }
-
-    .home-slide {
-        display: flex;
-        flex-direction: column;
-        height: 100vh; /* Take up full viewport height */
-        overflow: hidden; /* Prevent scrolling */
-        justify-content: space-between; /* Distribute space between elements */
-        align-items: center; /* Center content horizontally */
-        padding: 20px;
-        box-sizing: border-box; /* Include padding in height calculation */
-    }
-
-    .HomeContent {
-        padding: 20px;
-        text-align: center;
-        flex: 1; /* Allow it to grow and take available space */
-        box-sizing: border-box; /* Include padding in height calculation */
-        overflow: hidden; /* Prevent scrolling within HomeContent */
-    }
-
-    .SideImg {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .SideImg img {
-        width: 80%;
-        max-width: 300px; /* Ensure the image doesn't get too large */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-
-/* General Styles for About-Me Page */
-.about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.about-content {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-
-
-/* General Styles for About-Me Page */
-.about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.about-content {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-
-
-/* Ensure proper layout on mobile devices */
-@media only screen and (max-width: 768px) {
-    .about-me {
-        padding: 10px;
-    }
-
-    .about-content {
-        margin-bottom: 15px;
-    }
-
-
-}
-
-@media only screen and (max-width: 768px) {
-    .about-us {
-        padding: 20px;
-    }
-
-    .about-content {
-        margin-bottom: 15px;
-    }
-
-    .about-me-division {
-        padding: 10px;
-    }
-
-    .about-me-table {
-        margin-bottom: 15px;
-    }
-
-    .about-me-table iframe {
-        height: 400px; /* Adjust height for better visibility on mobile */
-    }
-}
-
