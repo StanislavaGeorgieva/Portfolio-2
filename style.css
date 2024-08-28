@@ -532,12 +532,17 @@ form h2 .SocialLinks a:hover i {
         padding: 10px;
     }
 
-    .SocialLinks {
-        gap: 15px; /* Increase space between icons for better touchability */
-    }
-
     .SocialLinks a {
-        font-size: 28px; /* Increase icon size for better touchability */
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 24px; /* Adjust icon size */
+        cursor: pointer;
+        z-index: 1000; /* Make sure it’s on top of other elements */
+    }
+    
+    .SocialLinks a:hover, .SocialLinks a:active, .SocialLinks a:focus {
+        color: #0073b1; /* Or any color to indicate interaction */
+        text-decoration: none;
     }
 }
 /* General Styles for Mobile Devices */
