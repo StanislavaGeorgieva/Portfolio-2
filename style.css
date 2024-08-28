@@ -521,12 +521,25 @@ form h2 .SocialLinks i {
     background-color: transparent;
 }
 
+
 form h2 .SocialLinks a:hover i {
     background-color: #176d2d;
     color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+    form {
+        padding: 10px;
+    }
 
+    .SocialLinks {
+        gap: 15px; /* Increase space between icons for better touchability */
+    }
+
+    .SocialLinks a {
+        font-size: 28px; /* Increase icon size for better touchability */
+    }
+}
 /* General Styles for Mobile Devices */
 @media only screen and (max-width: 768px) {
 
