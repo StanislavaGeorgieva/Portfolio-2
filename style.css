@@ -577,7 +577,7 @@ form .SocialLinks a:hover i {
         padding: 20px;
         text-align: center;
         flex: 1;
-        overflow: hidden;
+        overflow-y: auto; /* Allow vertical scrolling if content overflows */
     }
 
     .SideImg {
@@ -649,3 +649,4 @@ form .SocialLinks a:hover i {
         font-size: 1rem;
     }
 }
+
