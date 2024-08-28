@@ -84,4 +84,25 @@ function Navigate(indx) {
 } */
 
         
+    document.addEventListener('DOMContentLoaded', function() {
+        const contentContainer = document.querySelector('.about-us');
+        let page = 1;
+    
+        function loadMoreContent() {
+            // Simulate loading more content
+            const newContent = document.createElement('div');
+            newContent.style.padding = '20px 0';
+            newContent.innerHTML = `
+                <iframe src="images/Certificate.pdf" width="100%" height="300px" style="border: none;"></iframe>
+            `;
+            contentContainer.appendChild(newContent);
+        }
+    
+        contentContainer.addEventListener('scroll', function() {
+            if (contentContainer.scrollTop + contentContainer.clientHeight >= contentContainer.scrollHeight) {
+                page++;
+                loadMoreContent();
+            }
+        });
+    });
     
