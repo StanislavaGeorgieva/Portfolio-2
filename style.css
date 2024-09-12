@@ -597,7 +597,28 @@ form .SocialLinks a:hover i {
         padding: 20px;
         overflow-y: auto;
     }
-
+    @media only screen and (max-width: 600px) {
+        .about-us {
+            padding: 15px; /* Adjust padding for smaller screens */
+        }
+    
+        .about-me-divison {
+            display: block; /* Ensure stacked layout on mobile */
+        }
+    
+        .about-me-table, .skill-bar {
+            width: 100%; /* Make sure elements take full width */
+        }
+    
+        .heading, .sub-heading, .aboutme-deatils {
+            font-size: 1.5em; /* Adjust text size for readability on mobile */
+        }
+    
+        .skill-bar li {
+            margin-bottom: 15px; /* Add space between skill bars */
+        }
+    }
+    
     .about-me-divison {
         flex-direction: column;
         overflow-y: auto;
